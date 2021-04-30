@@ -40,6 +40,7 @@
     "create-react-class": "15.7.0",
     "element-class": "0.2.2",
     "filesize": "6.3.0",
+    "fuse.js": "6.4.6",
     "history": "4.10.1",
     "https-browserify": "1.0.0",
     "jdu": "1.0.0",
