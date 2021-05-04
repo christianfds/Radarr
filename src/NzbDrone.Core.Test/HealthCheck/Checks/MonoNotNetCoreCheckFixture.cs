@@ -20,7 +20,7 @@ namespace NzbDrone.Core.Test.HealthCheck.Checks
         [Platform("Mono")]
         public void should_log_warning_if_mono()
         {
-            Subject.Check().ShouldBeWarning();
+            Subject.Check().ShouldBeError();
         }
 
         [Test]
@@ -52,7 +52,7 @@ namespace NzbDrone.Core.Test.HealthCheck.Checks
                         new ProcessOutputLine(ProcessOutputLevel.Standard, "FreeBSD")
                     }
                 });
-            Subject.Check().ShouldBeWarning();
+            Subject.Check().ShouldBeError();
         }
     }
 }
